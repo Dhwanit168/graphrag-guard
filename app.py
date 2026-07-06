@@ -52,10 +52,10 @@ with st.sidebar:
         "Gemini API Key", type="password", value=os.getenv("GEMINI_API_KEY", "")
     )
     cognee_url = st.text_input(
-        "Cognee Cloud Instance URL", value=os.getenv("COGNEE_URL", "https://your-instance.cognee.ai")
+        "Cognee Cloud Instance URL",type="password", value=os.getenv("COGNEE_URL", "https://your-instance.cognee.ai")
     )
     cognee_api_key = st.text_input(
-        "Cognee Cloud API Key (optional)", type="password", value=os.getenv("COGNEE_API_KEY", "")
+        "Cognee Cloud API Key", type="password", value=os.getenv("COGNEE_API_KEY", "")
     )
 
     st.divider()
